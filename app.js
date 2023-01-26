@@ -82,7 +82,7 @@ app.post("/", function(req, res){
 });
 
 
-app.listen(5050, hostname, function() {
+app.listen(process.env.PORT|| 5050,function() {
     console.log("app is running on port 5050");
 });
 
